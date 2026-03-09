@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Startup Name Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>✨ Startup Name Generator</h1>
+    <p class="subtitle">Pick an industry and style. Get 20 name ideas instantly.</p>
+
+    <div class="controls">
+      <div class="field">
+        <label for="industry">Industry</label>
+        <select id="industry">
+          <option value="tech">Technology</option>
+          <option value="food">Food & Drink</option>
+          <option value="health">Health & Wellness</option>
+          <option value="finance">Finance</option>
+          <option value="education">Education</option>
+          <option value="creative">Creative & Design</option>
+          <option value="retail">Retail & E-commerce</option>
+          <option value="services">Professional Services</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="style">Style</label>
+        <select id="style">
+          <option value="modern">Modern</option>
+          <option value="classic">Classic</option>
+          <option value="playful">Playful</option>
+          <option value="techy">Techy</option>
+        </select>
+      </div>
+      <button id="generate" onclick="generateNames()">Generate Names</button>
+    </div>
+
+    <div id="results"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
